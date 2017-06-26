@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>@GANESHDA-HOME?</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="newcss.css" type="text/css"/>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        
+
+    </head>
+    <body background="ass.jpg" style="color:  aquamarine">
+    <center><h1 style='color: orange'>DELLI GANESH S</h1></center>
+    <div class="slideshow-container">
+        <div class="myslides fade">
+            <div class="numbertext">1/3</div>
+            <img src="bb.jpg" style="width:100%">
+            <div class="text">ganesh da caption one</div>
+        </div>
+        <div class="myslides fade">
+            <div class="numbertext">2/3</div>
+            <img src="back.jpg" style="width:100%">
+            <div class="text">ganesh da caption two</div>
+        </div>
+        <div class="myslides fade">
+            <div class="numbertext">3/3</div>
+            <img src="c.jpg" style="width:100%">
+            <div class="text">ganesh da caption three</div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div style="text-align: center; animation: infinite">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <div style="text-align:center; font-family:  cursive"> <h2> Know About Me </h2>
+        <p>To view <span class="yellow"> my webpage & know who i am  </span>is easy, just you can click the<span class="yellow"> button below.</span></p>
+                                <p> Thank you.</p>
+                                <a href="main.html" class="button">Visit my site</a>
+    </div>
+    <br>
+<br>
+<br>
+<br>
+
+
+
+<footer style="text-align: center;color: #ffffff">
+    <p class="copyright-text">Copyright &copy; 2017 All rights recieved</p>
+        </footer>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        function showSlides(){
+            var i;
+            var slides=document.getElementsByClassName("myslides");
+            var dots= document.getElementsByClassName("dot");
+            for(i=0;i<slides.length;i++){
+                slides[i].style.display="none";
+                    }
+              slideIndex++;
+              if(slideIndex>slides.length){
+                  slideIndex=1;
+              }
+            for(i=0;i<dots.length;i++){
+               dots[i].className= dots[i].className.replace("active","");
+            }
+            slides[slideIndex-1].style.display="block";
+            dots[slideIndex-1].className +="active","";
+            setTimeout(showSlides,2000);
+        }
+        </script>
+    </body>
+</html>

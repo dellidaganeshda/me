@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@GANESHDA-JUN?</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="newcss.css" type="text/css"/>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+
+</head>
+<body background="pp.jpg" style="color:  chartreuse">
+<center><h1 style="color: orange">DELLI GANESH S</h1></center>
+    <center><h3 style="font-family:  fantasy;">Keep Smiling Always</h3></center>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About me</a>
+        <a href="feedback.html">                                  Feedback</a>
+    </div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="ass2.jpg" style="width:100%">
+  <div class="text">CS3 EDITED ONE</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="log.jpg" style="width:100%">
+  <div class="text">CS3 EDITED TWO</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="ass copy.jpg" style="width:100%">
+  <div class="text">CS3 EDITED THREE</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<center><div class="boxes">" Man needs difficulties in life because they are necessary to enjoy the success."<span class="yellow">-A.P.J Abdul Kalam</span></div>
+</center>
+    <br>
+<br>
+<br>
+<br>
+
+
+
+<footer style="text-align: center;color: #ffffff">
+    <p class="copyright-text">Copyright &copy; 2017 All rights recieved</p>
+        </footer>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  
+  setTimeout(showSlides,5000);
+}
+</script>
+
+</body>
+</html> 
